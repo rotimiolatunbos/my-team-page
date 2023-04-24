@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+#heading h1, #about h2, #about p {
+		margin: 0;
+	}
+#heading h1 {
+	font-family: PT serif, serif;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 47.7px;
+	letter-spacing: -0.045%;
+}
+#about h2, #about p {
+	font-family: poppins, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+#about h2 {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+#team figure {
+	margin: 0;
+	position: relative;
+}
+#team figcaption .name {
+	font-family: Poppins;
+	font-weight: 600;
+}
+#team figcaption .job {
+	font-family: PT Serif;
+	font-weight: 400;
+}
+#team img {
+		width: 100%;
+		height: auto;
+	}
+footer p {
+		text-align: center;
+		margin: 0 0 12px 0;
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0em;
+		color: #A9A9A9;
+}
+footer a {
+	color: #A9A9A9;
+	
+}
+
+
+
+@media only screen and (max-width: 425px) {
+	#heading h1 {
+		margin: 71px 12px 38px;
+	}
+	#about {
+		margin: 0 12px 50px;
+	}
+	#team {
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100vw - 17px);
+		margin-bottom: 134px;
+	}
+	#team figure {
+		width: 50%;
+	}
+	#team figure:nth-of-type(odd) {
+		padding-right: 30px;
+		padding-left:19px;	}
+	#team figure:nth-of-type(even) {
+		padding-right: 19px;
+		padding-left:30px;
+		margin-top: 50px;
+	}
+	#team figcaption .job {
+		writing-mode: vertical-rl;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+	}
+	#team figcaption .name {
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0em;
+	}
+	#team figcaption .job {
+		font-size: 10px;
+		line-height: 13.25px;
+		letter-spacing: 0em;
+	}
+	#team figure:nth-of-type(odd) .job {
+		right: 10px;
+	}
+	#team figure:nth-of-type(even) .job {
+		right: 0;
+	}
+	footer p {
+		text-align: center;
+		margin: 0 0 12px 0;
+	}
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	#container {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 0 30px;
+	}
+	#heading, #about {
+		float: left;
+		width: 50%;
+		margin: 60px 0 46px;
+	}
+	#team {
+		margin-bottom: 115px;
+	}
+	#team figure {
+		width: calc(100%/3 - 3px);
+		display: inline-block;
+	}
+	#team figure:nth-of-type(1),
+	#team figure:nth-of-type(4) {
+		padding-right: 80px;
+		position: relative;
+		top: -80px;
+	}
+	#team figure:nth-of-type(2),
+	#team figure:nth-of-type(5) {
+		padding: 0 40px;
+		margin-top: 100px;
+	}
+	#team figure:nth-of-type(3),
+	#team figure:nth-of-type(6) {
+		padding-left: 80px;
+		position: relative;
+		top: -80px;
+	}
+	#team figcaption .job {
+		writing-mode: vertical-rl;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#team figure:nth-of-type(1) .job,
+	#team figure:nth-of-type(4) .job {
+		right: 60px;
+	}
+	#team figure:nth-of-type(2) .job,
+	#team figure:nth-of-type(5) .job {
+		right: 20px;
+	}
+	#team figure:nth-of-type(3) .job,
+	#team figure:nth-of-type(6) .job {
+		right: -20px;
+	}
+	#team figcaption .name {
+		font-size: 18px;
+		line-height: 27px;
+		letter-spacing: 0em;
+	}
+	#team figcaption .job {
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0em;
+	}
+}
